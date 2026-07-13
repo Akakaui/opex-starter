@@ -1,0 +1,45 @@
+{
+  "domain": "hooks-pi",
+  "platform": "general",
+  "topic": "hook-patterns",
+  "source": "Multi-source aggregate — 457 hook patterns",
+  "ingested": "2026-07-06",
+  "chunks_count": 457,
+  "frameworks": {
+    "desire_based_hook_formula": {
+      "name": "Desire-Based Hook Formula",
+      "when": "When creating hooks that need to trigger immediate emotional response",
+      "elements": [
+        "Identify the core desire (freedom, status, money, safety, belonging)",
+        "Create contrast between current state and desired state",
+        "Open a curiosity loop around the gap",
+        "Promise the gap can be closed"
+      ]
+    },
+    "attention_conversion_funnel": {
+      "name": "Attention-Conversion Funnel",
+      "when": "When structuring content that moves from attention to action",
+      "steps": [
+        "Step 1: Hook — Stop the scroll",
+        "Step 2: Retain — Promise value in the first 3 seconds",
+        "Step 3: Deliver — Give the promised value",
+        "Step 4: Convert — Aligned offer or CTA"
+      ]
+    },
+    "illusion_of_novelty": {
+      "name": "Illusion of Novelty Framework",
+      "when": "When making familiar topics feel fresh and new",
+      "method": "Reveal a changed aspect of a familiar thing + tie it to an outcome the viewer wants",
+      "example": "'A new way to get a root canal with robotics — zero needles, zero pain, back to work in 30 minutes'"
+    }
+  },
+  "key_tactics": [
+    "The first 1-3 seconds determine whether the viewer stays or scrolls",
+    "Specific numbers build credibility, vagueness on results creates suspense",
+    "Direct address ('you' or 'if you') makes it personal and relevant",
+    "Contrarian statements trigger cognitive dissonance — viewer must watch to see if you back it up",
+    "Curiosity gaps work best on educational and case study content",
+    "Pain-point-first hooks work for problem-aware audiences",
+    "Proof-first hooks work for skeptical audiences"
+  ]
+}

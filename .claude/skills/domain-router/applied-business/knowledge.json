@@ -1,0 +1,59 @@
+{
+  "domain": "applied-business",
+  "platform": "general",
+  "topic": "business-applied",
+  "source": "Multi-source aggregate — 119 business chunks",
+  "ingested": "2026-07-06",
+  "chunks_count": 119,
+  "frameworks": {
+    "offer_spectrum": {
+      "name": "Offer Spectrum",
+      "when": "When evaluating or designing any offer",
+      "levels": [
+        {"level": "No offer", "result": "No business, no life"},
+        {"level": "Bad offer", "result": "Negative profit, miserable life"},
+        {"level": "Decent offer", "result": "No profit, stagnating"},
+        {"level": "Good offer", "result": "Some profit, okay business"},
+        {"level": "Grand Slam offer", "result": "Fantastic profit, insane business"}
+      ]
+    },
+    "front_end_back_end": {
+      "name": "Front-End vs Back-End Offers",
+      "when": "When designing a revenue system with multiple offers",
+      "principle": "Front-end attracts and converts. Back-end generates real profit.",
+      "note": "Front-end can even lose money if back-end profit justifies it"
+    },
+    "wave_fee_offer": {
+      "name": "Wave Fee Offer",
+      "when": "When pricing high-ticket services or memberships",
+      "formula": "'I'll waive the $30K fee if you commit for the year. If you cancel early, you pay the difference.'",
+      "psychology": "Commitment = lower risk for you. The fee feels waived, not eliminated."
+    },
+    "surge_pricing": {
+      "name": "Surge Pricing (SMART)",
+      "when": "When optimizing pricing for demand management",
+      "tactic": "Higher prices during peak demand. Frame as 'weekdays get discount' not 'weekends cost more'.",
+      "benefit": "Smooths demand curve, better staff utilization"
+    },
+    "content_scaling_machine": {
+      "name": "Content is a Machine",
+      "when": "When building content operations",
+      "principle": "Content is a machine, not art. Build systems that produce winners consistently, not one-off viral hits.",
+      "quick_wins": [
+        "Ask 10 followers to post their results (incentivize)",
+        "Take your best-performing post, create 5 variations",
+        "Hire a Gen Z person to handle short-form content",
+        "Create a content calendar for next 30 days",
+        "Start repurposing one piece of content into 10 formats"
+      ]
+    }
+  },
+  "key_tactics": [
+    "No offer → Bad Offer → Decent Offer → Good Offer → Grand Slam Offer. Most people stop at Decent.",
+    "Front-end attracts, back-end profits. Design both intentionally.",
+    "The Wave Fee Offer shifts risk from you to commitment — powerful psychological frame",
+    "Surge pricing smooths demand: frame discounts for off-peak, not penalties for peak",
+    "Content is a machine — optimize for gross profit x units sold, not views or likes",
+    "Testing: start with 5-6% increase on highest volume items, monitor conversion, iterate"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "yt-content-psychology",
+  "platform": "youtube",
+  "topic": "content-psychology",
+  "knowledge_path": "business/knowledge/domains/yt-content-psychology",
+  "ingested_files": 7,
+  "ingested_chunks": 139,
+  "patterns": {
+    "hook_types": [
+      "Contrarian — 'Stop doing X, do Y instead'",
+      "Statistical — '% or $ claim in first sentence'",
+      "Question — Open loop that demands resolution",
+      "Imagine — Visualization trigger ('Imagine knowing...')",
+      "Revealing — 'The truth about X' / 'Nobody tells you'",
+      "Pattern Interrupt — Unexpected statement in first 2 seconds"
+    ],
+    "retention_rules": [
+      "Every piece must signal a specific pain/desire in first 2 seconds",
+      "Brain buckets content into 3 groups: solutions, entertainment, irrelevant",
+      "Trust = bank account. Every signal = deposit. Eventually they buy",
+      "5% implement themselves. 95% want to pay for speed once trust is built"
+    ],
+    "psychology_triggers": [
+      "Fear of missing out on transformation",
+      "Open loop → close loop tension",
+      "Social proof through specificity",
+      "Loss aversion before gain framing",
+      "Identity-based motivation ('This is who you become')"
+    ]
+  },
+  "frameworks": [
+    {"name": "Bullseye Signaling", "steps": 5, "source": "attention-conversion-funnel"},
+    {"name": "Trust Bank", "steps": 4, "source": "attention-conversion-funnel"},
+    {"name": "Desire-Based Hook Formula", "steps": 3, "source": "desire-based-hook-formula"},
+    {"name": "Illusion of Novelty", "steps": 5, "source": "illusion-of-novelty"},
+    {"name": "Hook Machine Workflow", "steps": 6, "source": "hook-machine-ai-workflow"}
+  ],
+  "last_updated": "2026-07-02"
+}

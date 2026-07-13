@@ -1,0 +1,70 @@
+# OPEX — AI Business Operating System
+
+## Overview
+
+OPEX is a co-founder level AI partner that runs your content business through Claude Code. It orchestrates 6 specialized sub-agents to handle content, video, sales, design, research, and outreach.
+
+## How It Works
+
+OPEX is the main orchestrator. It reads your memory files, understands your goals, and delegates work to sub-agents using the `task` tool. Each sub-agent runs in its own context window and returns results to OPEX, which reviews and presents them to you.
+
+```
+You → OPEX (orchestrator) → Sub-agents (specialists) → You
+```
+
+### Starting a Session
+
+Open Claude Code in this directory and say `Hey OPEX`. The bootstrap skill loads your memory files, checks your progress, and greets you based on where you are in your journey.
+
+### Invoking Agents
+
+OPEX routes automatically based on what you ask:
+- "Write a post" → content-writer
+- "Create a video" → video-agent
+- "Write sales copy" → copy-agent
+- "Find leads" → research-agent
+- "Design a carousel" → design-agent
+- "Help me sell" → sales-agent
+
+You can also reference agents directly: `Use the content-writer to draft a LinkedIn thread`
+
+## Agents
+
+| Agent | Purpose |
+|-------|---------|
+| opex | Main orchestrator — routes requests, manages memory, tracks progress |
+| content-writer | Posts, articles, threads, carousels for all platforms |
+| video-agent | Video scripts, scene plans, asset lists, Reels/YouTube/TikTok |
+| copy-agent | Sales copy, cold emails, landing pages, DMs |
+| design-agent | Design briefs, visual direction, brand guidelines |
+| research-agent | Competitor analysis, market research, knowledge ingestion |
+| sales-agent | Outreach, client acquisition, proposals, follow-ups |
+
+## Brand Specs
+
+- Background: #0A0A0A
+- Card: #141414
+- Accent: #FF6500 (ONE per design)
+- Text: #FFFFFF primary, #A0A0A0 secondary
+- Font: Montserrat
+
+## Tools
+
+- `tools/document/` — PDF and Word document generators
+- `tools/document/pdf.js` — PDF generation (pdfkit)
+- `tools/document/docx.js` — Word generation (docx)
+- `tools/document/html2pdf.js` — HTML to PDF (requires Playwright)
+- `tools/ingest.js` — Knowledge ingestion (file-based storage)
+- `tools/knowledge-store.js` — Domain knowledge file management
+
+## Knowledge Storage
+
+Knowledge is stored as JSON files in `business/knowledge/domains/[domain]/`.
+No external services required. No Qdrant, no Ollama, no vector databases.
+Just organized files that Claude Code can read directly.
+
+## Goals
+
+- North star: grow audience and generate leads
+- All content passes through humanizer patterns
+- Consistent brand across all platforms

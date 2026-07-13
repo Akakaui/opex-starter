@@ -1,0 +1,105 @@
+{
+  "domain": "yt-customer-acquisition",
+  "platform": "yt",
+  "topic": "customer-acquisition",
+  "source": "Alex Hormozi — How To Get Customers So Fast It Feels ILLEGAL",
+  "url": "https://youtu.be/5a0XKlW75ds",
+  "ingested": "2026-06-30",
+  "chunks_count": 11,
+  "frameworks": {
+    "give_away_free": {
+      "name": "Give Away What Others Charge For",
+      "when": "When you need to rapidly increase lead volume",
+      "essence": "Look at what competitors charge for. Look at your hard costs to deliver it. Give that thing away for free. Make it better than what they charge for.",
+      "why_it_works": "Perceived value is higher than cost to you. Lead volume skyrockets because you removed the price barrier while keeping the value signal."
+    },
+    "fewer_better": {
+      "name": "Fewer Better Team",
+      "when": "When building or scaling a marketing or creative team",
+      "essence": "One A-player marketer can do 5-25x the output of a B-player. In knowledge work the gap is not 3x like physical labor. It can be 100 million times more output.",
+      "application": "Keep teams small and ruthlessly upgrade talent. A players do not need many people around them.",
+      "note": "Reminder: one person with skill and a phone can make a 100 million view video."
+    },
+    "reverse_number_one": {
+      "name": "Reverse Engineer Number One",
+      "when": "When setting strategy or deciding where to compete",
+      "essence": "Ask: what would it take to be number one in your market? Another way: what else would have to be true for us to be number one?",
+      "why_it_works": "Bypasses incremental thinking. Forces reverse engineering from the end goal. Often you already have the resources allocated differently."
+    },
+    "sell_in_vacuum": {
+      "name": "Sell in a Vacuum",
+      "when": "When you want to avoid competing on price entirely",
+      "two_ways": [
+        "Sell where no one else is selling. Find the pond with no other fishermen.",
+        "Sell something that no one else sells. Unique product or service feature."
+      ]
+    },
+    "pre_over_post": {
+      "name": "Pre Over Post",
+      "when": "When creating ads, content, or any media",
+      "essence": "An ounce of pre is worth a pound of post. A video idea that people want to watch has more leverage than all the editing in the world.",
+      "pre_investment": [
+        "Analyze past winners to understand why they worked",
+        "Refine hooks until they are undeniable",
+        "Prepare props, examples, and stories in advance",
+        "Then recording is short and editing is minimal"
+      ],
+      "post_rule": "Post production should only enhance comprehension. Never use it to fix bad content."
+    },
+    "need_to_believes": {
+      "name": "Minimize Need to Believes",
+      "when": "When designing or evaluating your offer",
+      "essence": "Each thing a customer must believe to buy from you is a hill they must climb. 2+ need to believes = sale is very difficult. Best offers have 1 or 0.",
+      "example": "Amazon: you only need to believe that someone might buy your product on their platform. Everything else is handled for you.",
+      "application": "Audit every claim in your offer. Remove or solve any that require leaps of faith."
+    },
+    "split_test_priority": {
+      "name": "Split Test Priority Order",
+      "when": "When optimizing conversion rates",
+      "order": [
+        {"priority": 1, "test": "Offers", "impact": "Highest"},
+        {"priority": 2, "test": "Packaging (headlines, sub headlines)"},
+        {"priority": 3, "test": "Images associated with the offer"},
+        {"priority": 4, "test": "Third-party integrations and UX", "note": "Hardest but biggest potential wins, can explode the company"}
+      ],
+      "note": "All these give permanent lifts. One-time effort for ongoing gains."
+    },
+    "ltv_arms_race": {
+      "name": "LTV is the Arms Race",
+      "when": "When deciding growth strategy or ad spend strategy",
+      "essence": "Advertising costs only go up over time. Your LTV must also go up concurrently. The ability to spend more to acquire a customer comes from LTV not from finding cheaper leads.",
+      "implication": "High LTV = you can outspend competitors. Raising prices is one of the strongest but most feared LTV levers.",
+      "warning": "Do not compete on finding cheaper eyeballs. Compete on being able to spend more."
+    },
+    "affiliate_so_good": {
+      "name": "Make Affiliates So Good It Hurts",
+      "when": "When building an affiliate or partnership program",
+      "essence": "Do not offer 10-20% commission. That does not change behavior. Peel off a piece of your offering and give 100% of that piece to the affiliate. Let them sell it for whatever they want and keep everything.",
+      "why_it_works": "Your cost is just delivery. The affiliate gets a deal that actually makes sense for them. This creates an army that fills your calendar.",
+      "principle": "Design offers for partners that feel unfair in their favor."
+    },
+    "truth_as_strategy": {
+      "name": "Truth as Strategy / Damaging Admission",
+      "when": "When writing marketing copy or building trust",
+      "formula": "Bad comma bad comma bad comma BUT good",
+      "essence": "Nothing sells like the truth. If you claim your negatives first people cannot hold them against you and they trust your positives more.",
+      "examples": [
+        "We do not have the biggest parking lot comma we are not the biggest gym comma we do not have the most equipment BUT when you walk in you will forget all of that because you will have so much fun",
+        "Being small = personal attention. No capacity = high demand. New = fresh perspective."
+      ],
+      "note": "The BUT amplifies the good. It only works if the negatives are true and you own them."
+    }
+  },
+  "key_tactics": [
+    "Give away free what others charge for to supercharge lead volume",
+    "A players can do 100 million times more output in knowledge work than B players",
+    "Reverse engineer from 'what would it take to be number one' not from where you are",
+    "Sell in a vacuum: unique location or unique product",
+    "Pre-production has more leverage than all the editing in the world",
+    "Max 1 need to believe per offer. 2+ is a steep hill.",
+    "Split test order: offers first, packaging second, images third, integrations fourth",
+    "LTV must rise as ad costs rise. Raise prices to fuel the arms race.",
+    "Affiliate offers should feel unfair in the affiliate's favor",
+    "Damaging admissions build more trust than perfect claims"
+  ]
+}

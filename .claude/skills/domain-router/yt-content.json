@@ -1,0 +1,47 @@
+{
+  "id": "yt-content",
+  "platform": "youtube",
+  "topic": "content-creation",
+  "patterns": {
+    "hook_formats": {
+      "contrarian": [
+        "**Key insight:** This is why it takes so long to grow initially \u2014 you don't have trust. As you grow, trust compounds.",
+        "Every video must pull the viewer through 6 checkpoints (gates). If they don't pass a checkpoint, they bounce.",
+        "### 1. Don't Play Rigged Games",
+        "- \"If you don't believe in yourself, you'll never achieve what you want\"",
+        "# Knowledge: 6 Cheat Codes to Stop Playing Social Media on Hard Mode"
+      ],
+      "statistical": [
+        "- Example: \"Is it possible to start a business in one day and make $1,000 from it?\" \u2192 5-6 leads per video, ran 8 times for 24M views",
+        "## Truth 6: Spend 80% of Time on Visual Hook",
+        "She bought everything he recommended. He closed 100% of people after making this switch.",
+        "Creator generated 15M impressions on LinkedIn in last year, 99% came in last 6 weeks. LinkedIn is launching their own For You vertical video feed.",
+        "- **Frequency**: Start 1x/week, increase if engagement stays high"
+      ],
+      "question": [
+        "### Who Falls into the Trap?",
+        "- Example: \"Is it possible to start a business in one day and make $1,000 from it?\" \u2192 5-6 leads per video, ran 8 times for 24M views",
+        "- **Don't have original idea?** Start with this list. Ask: \"Do I have a unique take on this?\"",
+        "### Factor 2: Which Would Cause You to Quit?",
+        "- \"If the future isn't 100 partners, why start with partners now?\""
+      ],
+      "imagine": [
+        "Imagine knowing your business is leaving $500,000 in revenue on the table every year because you're not tracking and nurturing your leads properly.",
+        "Imagine knowing your business is losing 23% of potential revenue every quarter\u2014without anyone knowing.",
+        "Imagine knowing your business is paying $250,000 annually in wasted time because you're still booking meetings the old way."
+      ],
+      "revealing": [
+        "- \"The truth about X\" (revealing/insider)",
+        "## Truth 6: Spend 80% of Time on Visual Hook",
+        "# Knowledge: 8 Brutal Truths About Winning on Social Media",
+        "## Truth 1: Virality Can Be Engineered",
+        "## Truth 2: People Watch for THEM, Not for You"
+      ]
+    },
+    "retention_tactics": [
+      "Pattern interrupt every 60 seconds",
+      "Promised outcome in first 10 seconds",
+      "Bucket content into 3 mental categories"
+    ]
+  }
+}

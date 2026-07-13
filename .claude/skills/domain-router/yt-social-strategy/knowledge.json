@@ -1,0 +1,49 @@
+{
+  "domain": "yt-social-strategy",
+  "platform": "general",
+  "topic": "social-strategy",
+  "source": "Multi-source aggregate — 264 social strategy chunks",
+  "ingested": "2026-07-06",
+  "chunks_count": 264,
+  "frameworks": {
+    "social_media_video_game": {
+      "name": "Social Media is a Video Game",
+      "when": "When analyzing platform dynamics or choosing where to invest time",
+      "principle": "Each platform has mechanics. Learn them or play in hard mode.",
+      "key_questions": [
+        "What game am I playing? (which platform, what audience)",
+        "What are the cheat codes? (format, timing, hooks that work)",
+        "Is this game rigged or fair? (does extra effort map to extra reward?)"
+      ]
+    },
+    "visual_hook_banger": {
+      "name": "Visual Hook Banger",
+      "when": "When creating short-form video hooks",
+      "steps": [
+        "Open curiosity loop in viewer's mind",
+        "Take IVA (Ideal Viewer Avatar), imagine pain point",
+        "Open curiosity loop around that pain point",
+        "They have to listen for the next line"
+      ]
+    },
+    "linkedin_shorts_cheat_code": {
+      "name": "LinkedIn Shorts Cheat Code",
+      "when": "When creating short-form video for LinkedIn specifically",
+      "rules": [
+        "Quality bar is LOWEST on LinkedIn — no editing required",
+        "Point and shoot with iPhone",
+        "60 seconds of value",
+        "Add captions in CapCut",
+        "Process: 5 topics → write first sentences → record → post"
+      ]
+    }
+  },
+  "key_tactics": [
+    "People overvalue the edit — value trumps production quality every time",
+    "Corporate jobs are rigged games — find platforms where extra effort maps to extra reward",
+    "The reason you feel like an imposter as a beginner: you haven't had enough reps yet",
+    "Every coach tells you to do the same thing — find what they're NOT saying",
+    "Start with end in mind to avoid dead audience traps",
+    "Modern content stack beats old production-heavy approaches"
+  ]
+}

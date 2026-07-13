@@ -1,0 +1,59 @@
+{
+  "domain": "yt-personal-brand",
+  "platform": "yt",
+  "topic": "personal-brand",
+  "source": "Multi-source aggregate — 67 personal brand chunks",
+  "ingested": "2026-07-06",
+  "chunks_count": 67,
+  "frameworks": {
+    "fear_cycle": {
+      "name": "The Fear Cycle",
+      "when": "When writing content that needs emotional urgency",
+      "cycle": [
+        "Establish Fear",
+        "Tease Solve",
+        "Press Fear (amplify)",
+        "Give Solve"
+      ],
+      "principle": "Emotion → Action. All marketing boils down to making the viewer feel an emotion that compels action."
+    },
+    "curiosity_loop_hides_fear": {
+      "name": "Curiosity Loop Hides the Fear",
+      "when": "When hooks need emotional depth without feeling manipulative",
+      "method": "Start with something curious that implies fear. Fear slides to subconscious but they hear it.",
+      "example": "'Nike's being sued for all these runners' injuries' — curiosity opens, fear lands subconsciously"
+    },
+    "territory_compression": {
+      "name": "Territory Compression",
+      "when": "When positioning or refining a personal brand",
+      "principle": "Magnetic brands shrink to grow — become more valuable for fewer people first",
+      "application": "Instead of 20 topics, talk about 2. Instead of everyone, talk to someone specific."
+    },
+    "change_how_they_think": {
+      "name": "Change How They Think",
+      "when": "When creating high-value brand content",
+      "method": "Reframe their perspective in 30 seconds while watching. They don't have to do anything — attribute value in real time.",
+      "why_powerful": "More powerful than tactics (which require them to act)"
+    },
+    "fandom_funnel": {
+      "name": "Fandom Funnel & Superfans",
+      "when": "When building audience loyalty",
+      "forces": [
+        "One-of-One Expertise: Use trust anchors — results, experiments, case studies, hours spent",
+        "Territory: Who you stand for and the specific slice you occupy",
+        "Consistency: Show up with the same frame every time",
+        "Intimacy: Make them feel like they know you personally"
+      ],
+      "source": "Callaway Marketing — BY FAR, The Smartest Way to Build A Personal Brand in 2026"
+    }
+  },
+  "key_tactics": [
+    "Magnetic brands shrink to grow — narrower territory, stronger connection",
+    "Emotion → Action. Find the emotion that compels the specific action you want",
+    "Fear slides to subconscious when wrapped in a curiosity loop — they feel it without noticing",
+    "Change how they think in 30 seconds is more powerful than giving them a tactic",
+    "Infuse one-of-one expertise in the second/third line (after hook) using trust anchors",
+    "The Light Phone example: same fear hook → 2.3 million views",
+    "Most people speak in generalities → nobody feels it's for them. Get specific."
+  ]
+}

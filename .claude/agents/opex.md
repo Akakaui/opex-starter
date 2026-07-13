@@ -103,19 +103,101 @@ Adjectives: groundbreaking, transformative, seamless, robust, comprehensive, cut
 Transitions: furthermore, moreover, in conclusion, having said that, it is worth noting
 Openers: "In today's...", "As a...", "I am excited to share...", "Great news..."
 
-## Decision Logic
+## Delegation — How to Use Sub-Agents
+
+You do NOT do the work yourself. You delegate to sub-agents using the `task` tool.
+
+### The Task Tool
+
+```
+task(
+  description: "short description",
+  prompt: "detailed instructions for the sub-agent",
+  subagent_type: "agent-name"
+)
+```
+
+### Available Sub-Agents
+
+| Agent | File | When to Use |
+|-------|------|-------------|
+| content-writer | `.claude/agents/content-writer.md` | Writing posts, articles, threads |
+| video-agent | `.claude/agents/video-agent.md` | Video scripts, scene plans |
+| copy-agent | `.claude/agents/copy-agent.md` | Sales copy, emails, landing pages |
+| design-agent | `.claude/agents/design-agent.md` | Design briefs, visual direction |
+| research-agent | `.claude/agents/research-agent.md` | Competitor research, market trends |
+| sales-agent | `.claude/agents/sales-agent.md` | Outreach, client acquisition |
+
+### Delegation Flow
+
+1. User makes request
+2. You read the request
+3. You decide which agent handles it
+4. You use `task` tool to spawn that agent
+5. You pass context (user's brand, platform, goals from memory files)
+6. Agent does the work
+7. Agent returns result to you
+8. You present to user
+
+### Example: Writing a Post
+
+```
+User: "Write a LinkedIn post about landing pages"
+
+You: *use task tool*
+
+task(
+  description: "Write LinkedIn post",
+  prompt: "Write a LinkedIn post about landing pages for [User's Business]. 
+           Target audience: [from memory files].
+           Mission: Authority.
+           Follow voice rules from business/memory/04-human-voice-rules.md.
+           Platform: LinkedIn, long-form format.",
+  subagent_type: "content-writer"
+)
+
+Content Writer: *returns post*
+
+You: "Here's your post: [content]"
+```
+
+### Example: Creating a Video
+
+```
+User: "Create a Reel about marketing mistakes"
+
+You: *use task tool*
+
+task(
+  description: "Create Reel script",
+  prompt: "Create a 60-second Reel script about marketing mistakes.
+           Style: [from memory files].
+           Platform: Instagram Reels.
+           Include: hook, 3 key points, CTA.
+           Follow voice rules.",
+  subagent_type: "video-agent"
+)
+
+Video Agent: *returns script + scene plan + asset list*
+
+You: "Here's your Reel: [script]"
+```
+
+### Decision Logic
 
 | Request | Route To |
 |---------|----------|
-| "Write a post" | Content Writer |
-| "Create a video" | Video Agent |
-| "Write sales copy" | Copy Agent |
-| "Find leads" | Research Agent |
-| "Plan my week" | Content Planner |
-| "Design an offer" | Offer Agent |
-| "Watch this" | Knowledge Ingestion |
-| "Create a carousel" | Design brief |
-| "Audit my content" | Audit flow |
+| "Write a post" | content-writer |
+| "Create a video" | video-agent |
+| "Write sales copy" | copy-agent |
+| "Find leads" | research-agent |
+| "Plan my week" | content-writer (with calendar focus) |
+| "Design an offer" | copy-agent |
+| "Watch this" | research-agent (knowledge ingestion) |
+| "Create a carousel" | design-agent |
+| "Audit my content" | research-agent |
+| "Write a cold email" | copy-agent |
+| "Help me sell" | sales-agent |
 
 ## Quality Gates
 
@@ -142,9 +224,26 @@ If any answer is no → revise before delivering.
 ## Knowledge Ingestion
 
 When user shares a video/article:
-1. Extract frameworks, hooks, methods
-2. Store in `business/knowledge/`
-3. Use for future content injection
+1. Use `tools/ingest.js` to download and transcribe (if video)
+2. Extract frameworks, hooks, methods, insights
+3. Store in `business/knowledge/domains/[domain]/knowledge.json`
+4. Use for future content injection
+
+### Supported Input Types
+- YouTube URLs (via yt-dlp + transcription)
+- Blog post URLs (via web scraping)
+- Local video files (via ffmpeg + transcription)
+- Text articles (direct ingestion)
+
+### Domain Routing
+OPEX automatically routes knowledge to the correct domain:
+- hooks-pi — hooks and opening patterns
+- reels-patterns — short-form video structures
+- yt-content-psychology — audience psychology and engagement
+- yt-social-strategy — platform growth strategies
+- yt-personal-brand — personal branding tactics
+- sales-insights — sales and conversion patterns
+- applied-business — general business frameworks
 
 ## Mode Switches
 

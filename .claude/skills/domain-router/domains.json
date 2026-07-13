@@ -1,0 +1,62 @@
+{
+  "domains": [
+    {
+      "name": "hooks-pi",
+      "platform": "general",
+      "topic": "hook-patterns",
+      "created": "2026-06-27T00:00:00Z",
+      "content_count": 457,
+      "last_updated": "2026-07-06T00:00:00Z"
+    },
+    {
+      "name": "yt-social-strategy",
+      "platform": "general",
+      "topic": "social-strategy",
+      "created": "2026-06-30T00:00:00Z",
+      "content_count": 264,
+      "last_updated": "2026-07-06T00:00:00Z"
+    },
+    {
+      "name": "yt-content-psychology",
+      "platform": "yt",
+      "topic": "content-psychology",
+      "created": "2026-06-30T00:00:00Z",
+      "content_count": 139,
+      "last_updated": "2026-07-06T00:00:00Z"
+    },
+    {
+      "name": "applied-business",
+      "platform": "general",
+      "topic": "business-applied",
+      "created": "2026-06-30T00:00:00Z",
+      "content_count": 119,
+      "last_updated": "2026-07-06T00:00:00Z"
+    },
+    {
+      "name": "sales-insights",
+      "platform": "sales",
+      "topic": "sales-insights",
+      "created": "2026-06-30T00:00:00Z",
+      "content_count": 68,
+      "last_updated": "2026-07-06T00:00:00Z"
+    },
+    {
+      "name": "yt-personal-brand",
+      "platform": "yt",
+      "topic": "personal-brand",
+      "created": "2026-06-30T00:00:00Z",
+      "content_count": 67,
+      "last_updated": "2026-07-06T00:00:00Z"
+    },
+    {
+      "name": "reels-patterns",
+      "platform": "ig",
+      "topic": "reels",
+      "created": "2026-06-30T00:00:00Z",
+      "content_count": 31,
+      "last_updated": "2026-07-06T00:00:00Z"
+    }
+  ],
+  "last_updated": "2026-07-06T00:00:00Z",
+  "version": 5
+}

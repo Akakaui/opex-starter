@@ -2,10 +2,10 @@
 name: watch-content
 description: Extract, analyze, and process content from videos. Use when researching video transcripts, extracting frameworks, or analyzing video content.
 ---
-# WATCH SKILL
+# WATCH-CONTENT SKILL
 
-Last updated: 2026-06-27
-Version: 4
+Last updated: 2026-07-13
+Version: 5
 Scope: Knowledge Ingestion Agent, Video Agent, Research Agent
 
 ## PURPOSE
@@ -26,25 +26,26 @@ Vimeo, SoundCloud, and 1000+ other sites via yt-dlp.
 3. Download audio → Transcribe (Groq Whisper)
 4. Download video → Extract frames (if analysis mode)
 5. Analyze content (patterns, hooks, frameworks)
-6. Store in appropriate domain
+6. Store in appropriate domain knowledge files
 7. DELETE ALL TEMP FILES
 
 ## MODES
 
 ### Transcript Mode (audio only)
+
+Use the `/watch` skill or run yt-dlp directly:
 ```bash
-node ~/.config/opencode/tools/ingest/pipeline.js <url> --mode transcript
+yt-dlp --write-auto-sub --sub-lang en --skip-download -o "%(title)s" "<url>"
 ```
 - Downloads audio only
 - Transcribes with Groq Whisper
-- Stores transcript in domain
+- Stores transcript in domain knowledge files
 - Deletes audio
 - Best for: pure knowledge extraction
 
 ### Analysis Mode (audio + video)
-```bash
-node ~/.config/opencode/tools/ingest/pipeline.js <url> --mode analysis
-```
+
+Use the `/watch` skill with frame extraction:
 - Downloads audio + video
 - Transcribes audio
 - Extracts frames (1 per 30 seconds)
@@ -53,9 +54,8 @@ node ~/.config/opencode/tools/ingest/pipeline.js <url> --mode analysis
 - Best for: competitor research, content analysis
 
 ### Deep Mode (full breakdown)
-```bash
-node ~/.config/opencode/tools/ingest/pipeline.js <url> --mode deep
-```
+
+Use the `/watch` skill with higher frame rate:
 - Downloads audio + video
 - Transcribes audio
 - Extracts frames at higher rate (1 per 10 seconds)
@@ -67,7 +67,7 @@ node ~/.config/opencode/tools/ingest/pipeline.js <url> --mode deep
 
 ### 1. Knowledge Extraction (audio only)
 User: "Watch this Hormozi video and extract the frameworks"
-Flow: Download audio → Transcribe → Extract patterns → Store → Delete audio
+Flow: Download audio → Transcribe → Extract patterns → Store in domain files → Delete audio
 
 ### 2. Content Inspiration (video analysis)
 User: "Analyze this reel and help me create similar content"
@@ -115,21 +115,9 @@ rm -rf /tmp/opex-transcript-*
 
 ## DEPENDENCIES
 
-- yt-dlp — video/audio download (at /home/ubuntu/.local/bin/yt-dlp)
+- yt-dlp — video/audio download
 - ffmpeg — audio conversion + frame extraction
 - Groq API key — Whisper transcription ($GROQ_API_KEY)
-- Webshare proxy — bypasses YouTube IP blocks
-- Ollama — local embeddings (nomic-embed-text)
-- Qdrant — vector storage (port 6333)
-
-## PROXY CONFIGURATION
-
-Proxy is configured in extractor.js:
-```javascript
-const PROXY = process.env.WEBSHARE_PROXY || 'http://sgfpmhdm:eqorm333gsth@31.59.20.176:6754/';
-```
-
-All yt-dlp commands use: `--proxy "${PROXY}"`
 
 ## USAGE
 
@@ -142,32 +130,20 @@ Transcript only (no video download):
 Full analysis (audio + video + frames):
   /watch [URL] --mode deep
 
-Ingest to knowledge base:
-  /watch [URL] --ingest
-
-Batch ingest:
-  /watch-batch [URL1] [URL2] [URL3] --ingest
-
 ## EXAMPLES
 
 ### Extract knowledge from YouTube video
 ```
-@opex watch https://youtube.com/watch?v=abc123
-"Transcribe this video and extract all frameworks and methods.
-Store in appropriate domain."
+Hey OPEX, watch https://youtube.com/watch?v=abc123
+Transcribe this video and extract all frameworks and methods.
+Store in appropriate domain.
 ```
 
 ### Analyze Instagram reel for patterns
 ```
-@opex watch https://instagram.com/reel/abc123
-"Analyze the hook, pacing, visual style, and CTAs.
-Help me understand what makes this work."
-```
-
-### Batch ingest training content
-```
-@opex watch https://youtube.com/watch?v=abc123 https://youtube.com/watch?v=def456
-"Ingest all these videos for training. Extract transcripts and patterns."
+Hey OPEX, watch https://instagram.com/reel/abc123
+Analyze the hook, pacing, visual style, and CTAs.
+Help me understand what makes this work.
 ```
 
 ## GROQ API KEY

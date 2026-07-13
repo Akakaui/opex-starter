@@ -1,0 +1,28 @@
+{
+  "id": "sales-audit",
+  "platform": "linkedin",
+  "topic": "revenue-audit",
+  "patterns": {
+    "hook_formats": {
+      "statistical": [
+        "- Example: \"Is it possible to start a business in one day and make $1,000 from it?\" \u2192 5-6 leads per video, ran 8 times for 24M views",
+        "## Truth 6: Spend 80% of Time on Visual Hook",
+        "She bought everything he recommended. He closed 100% of people after making this switch.",
+        "Creator generated 15M impressions on LinkedIn in last year, 99% came in last 6 weeks. LinkedIn is launching their own For You vertical video feed.",
+        "- Start at 40%, end at 55%"
+      ],
+      "revealing": [
+        "### 4. Leaky Bucket (No Offer)",
+        "## The Email Revenue Benchmark",
+        "# Lead Tracking CRM Powerhouse: How to Turn Leads Into Revenue Machines",
+        "Imagine knowing your business is leaving $500,000 in revenue on the table every year because you're not tracking and nurturing your leads properly.",
+        "## The #1 Authority Playbook for Revealing Hidden Profits"
+      ]
+    },
+    "authority_builders": [
+      "Lead with data points",
+      "5-layer revenue leak framework",
+      "Comparison of before/after numbers"
+    ]
+  }
+}

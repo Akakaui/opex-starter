@@ -1,0 +1,80 @@
+{
+  "domain": "yt-content-strategy",
+  "platform": "yt",
+  "topic": "content-strategy",
+  "source": "Alex Hormozi — How I Gained 7.8M Followers in 40 Months",
+  "url": "https://youtu.be/HVOubeXUcx0",
+  "ingested": "2026-06-29",
+  "chunks_count": 14,
+  "frameworks": {
+    "proof_promise_plan": {
+      "name": "Proof-Promise-Plan",
+      "when": "When writing video introductions or opening any educational content",
+      "elements": [
+        "Proof: Why should they listen to you? Lead with results, credentials, or data",
+        "Promise: Tell them exactly what they will get from this specific piece",
+        "Plan: Set expectations for what happens next"
+      ],
+      "note": "Order changes based on which element is strongest for that piece"
+    },
+    "content_buckets": {
+      "name": "Three Content Buckets",
+      "when": "When deciding what type of content to create",
+      "buckets": [
+        {"type": "Entertainment", "audience": "Wants to watch", "use_for": "Brand awareness, not conversion"},
+        {"type": "Edutainment", "audience": "Mixed", "use_for": "Catch-all, but converts poorly"},
+        {"type": "Education", "audience": "Action-takers", "use_for": "Business outcomes, leads, sales"}
+      ],
+      "insight": "Entertainment and education audiences do not cross over in meaningful numbers. Pick one."
+    },
+    "five_shifts_for_you": {
+      "name": "For Us to For You (5 Shifts)",
+      "when": "When reviewing drafts or planning content structure",
+      "shifts": [
+        "Packaging: Vague to Clear thumbnail and headline",
+        "Intros: Confirming the headline to Proof-Promise-Plan",
+        "Meat: Razzle-dazzle production to Steps plus Stories",
+        "Visuals: Overproduction to Effective production (charts, data)",
+        "Pre-work: Fix in post to Research before recording"
+      ]
+    },
+    "rpm_paired_metric": {
+      "name": "RPM as Paired Metric",
+      "when": "When measuring content performance",
+      "formula": "RPM = Views x Revenue per View",
+      "why": "Captures both quantity and quality. Higher RPM means you are reaching the right people. A 100K-view video can outperform a 10M-view video."
+    },
+    "stranger_first": {
+      "name": "Assume Nothing (Stranger-First)",
+      "when": "When writing content for any growing audience",
+      "rules": [
+        "Introduce yourself every time",
+        "Explain why they should listen every time",
+        "No inside jokes or unexplained references",
+        "Warm people like reminders. Cold people need introductions"
+      ]
+    },
+    "content_strategy_loop": {
+      "name": "Content Strategy Loop",
+      "when": "When planning your overall content strategy",
+      "loop": [
+        "Start doing something (anything is better than nothing)",
+        "See what works better than the rest",
+        "Do as much of that as possible",
+        "Continue until it stops working",
+        "Find the next thing"
+      ],
+      "core_question": "With the resources I have, how can I maximize the number of the right people who find out about my stuff?"
+    }
+  },
+  "key_tactics": [
+    "Clear packaging beats curiosity gap for educational content",
+    "Language and message matter more than production effects (75% stat)",
+    "Narrow topics to attract your specific audience only",
+    "Long-form drives more business conversions than short-form",
+    "Ad revenue is a real-time leading performance indicator",
+    "Repost greatest hits to a growing audience",
+    "An ounce of pre-work is worth a pound of post-production",
+    "Nothing works forever. Iterate constantly."
+  ]
+}

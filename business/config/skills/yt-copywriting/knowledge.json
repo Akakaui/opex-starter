@@ -1,0 +1,23 @@
+{
+  "domain": "yt-copywriting",
+  "created": "2026-06-27T08:06:09.781Z",
+  "last_updated": "2026-06-27T08:06:12.220Z",
+  "patterns": [],
+  "frameworks": [],
+  "examples": [
+    {
+      "source": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "platform": "yt",
+      "topic": "copywriting",
+      "ingested": "2026-06-27T08:06:12.220Z",
+      "preview": "Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster) The official video for “Never Gonna Give You Up” by Rick Astley. \n\nNever: The Autobiography 📚 OUT NOW! \nFollow this link to get your copy and listen to Rick’s ‘Never’ playlist ❤️ #RickAstleyNever\nhttps://linktr.ee/rickastleynever\n\n“Never Gonna Give You Up” was a global smash on its release in July 1987, topping the charts in 25 countries including Rick’s native UK and the US Billboard Hot 100.  It also won the Brit Award for B"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "platform": "yt",
+      "ingested": "2026-06-27T08:06:12.220Z"
+    }
+  ]
+}

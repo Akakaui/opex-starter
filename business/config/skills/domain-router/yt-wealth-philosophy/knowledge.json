@@ -1,0 +1,71 @@
+{
+  "domain": "yt-wealth-philosophy",
+  "platform": "yt",
+  "topic": "wealth-philosophy",
+  "source": "Jim Rohn — Never Worry About Money Again (70/10/10/10 Formula)",
+  "url": "https://youtu.be/DBPFU0Z5jV4",
+  "ingested": "2026-06-30",
+  "chunks_count": 7,
+  "frameworks": {
+    "rich_vs_poor_philosophy": {
+      "name": "Rich vs Poor Philosophy of Money",
+      "when": "When discussing the foundational mindset of wealth building",
+      "poor_philosophy": "Spend your money and invest what is left",
+      "rich_philosophy": "Invest your money and spend what is left",
+      "insight": "The amount does not matter. What matters is the philosophy. A child with a dollar can learn the same principle as an adult with a million."
+    },
+    "seventy_ten_ten_ten": {
+      "name": "70/10/10/10 Formula for Financial Independence",
+      "when": "When giving practical money management advice or teaching financial literacy",
+      "formula": {
+        "seventy": "Do not spend more than 70 cents of every dollar. This is your living expense cap.",
+        "ten_charity": "10 cents for charity. Give to help people who cannot help themselves. Generosity builds character better than any class or book.",
+        "ten_active": "10 cents as active capital. Invest in projects to make a profit. Wages make you a living but profits make you a fortune.",
+        "ten_passive": "10 cents as passive capital. Let a financial institution use it. They pay you interest. This is where compound interest creates financial independence."
+      },
+      "key_insight": "The borrower is servant to the lender. The power position is the lender, not the spender. Build toward being a lender."
+    },
+    "profits_over_wages": {
+      "name": "Profits Over Wages",
+      "when": "When discussing why entrepreneurship or side income matters",
+      "essence": "Wages make you a living. Profits make you a fortune. There is no limit to profits. They can double, triple, and quadruple. Wages are capped. Profits are not.",
+      "example": "Find a broken wagon for $1, fix it up, sell it for $5. Anybody can do that. Find something, touch it, make it better, make a profit. Society now has a mended wagon."
+    },
+    "compound_interest_independence": {
+      "name": "Compound Interest Path to Independence",
+      "when": "When explaining how passive income works or why saving early matters",
+      "essence": "Passive capital = letting someone else use your money. They make a profit, pay you interest. Over time compound interest makes you financially independent.",
+      "result": "You will have the ability to live from the income of your own resources. That is the definition of financial independence."
+    },
+    "attitude_tax_bills": {
+      "name": "The Attitude Advantage on Bills and Taxes",
+      "when": "When addressing resistance to financial responsibilities",
+      "reframe": [
+        "Bills: You are not 'paying bills' — you are reducing liabilities and increasing assets. Love that.",
+        "Taxes: You are caring for the goose that lays the golden eggs. Gladly pay your share while working to lower them."
+      ],
+      "essence": "Same action, different frame. The frame determines whether you feel resentment or empowerment."
+    },
+    "four_questions_to_ponder": {
+      "name": "Four Questions to Ponder",
+      "when": "When motivating someone to take action on their goals or self-development",
+      "questions": [
+        {"q": "Why?", "meaning": "Why work this hard? Why take classes? Why read books? Why do the disciplines?"},
+        {"q": "Why not?", "meaning": "Why not see how many skills you can develop? How valuable you can become? How far you can go?"},
+        {"q": "Why not you?", "meaning": "If others can read, change, figure it out, turn it around — why not you?"},
+        {"q": "Why not now?", "meaning": "What better time than now to set goals, develop skills, get it together?"}
+      ],
+      "use": "Use these four questions in sequence to move someone from resistance to action."
+    }
+  },
+  "key_tactics": [
+    "The amount does not matter. The philosophy of what you do with it matters.",
+    "Invest first, spend what is left. Not the reverse.",
+    "70% max on living expenses. 10% charity. 10% active capital. 10% passive capital.",
+    "Wages make a living. Profits make a fortune. Prioritize profit-generating activity.",
+    "Compound interest through passive capital is the path to living from your own resources.",
+    "Be a lender not a borrower. That is the power position.",
+    "Reframe bills as liability reduction. Reframe taxes as feeding the goose.",
+    "Four-question sequence: Why → Why not → Why not you → Why not now."
+  ]
+}

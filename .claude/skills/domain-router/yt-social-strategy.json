@@ -1,0 +1,38 @@
+{
+  "id": "yt-social-strategy",
+  "platform": "youtube",
+  "topic": "social-strategy",
+  "knowledge_path": "business/knowledge/domains/yt-social-strategy",
+  "ingested_files": 9,
+  "ingested_chunks": 264,
+  "patterns": {
+    "platform_rules": [
+      "LinkedIn: Low production bar, premium audience, video is booming",
+      "Twitter/X: Thread structure, high frequency, controversial takes win",
+      "Instagram: Visual first, Reels distribution, aesthetic matters",
+      "TikTok: Raw authenticity > polish, trend-jacking, sounds",
+      "Threads: Growing fast, conversational, repurpose Twitter content"
+    ],
+    "content_types": [
+      "Hard Mode fixes — specific actionable fixes",
+      "Easy Mode — ride platform shifts",
+      "Brutal truths — contrarian observations",
+      "Video game — strategic frameworks",
+      "Year one metrics — transparent data dumps"
+    ],
+    "shift_2025": [
+      "AI content takes over — first-mover advantage",
+      "Long-form making comeback (podcasts, essays)",
+      "Community > audience — build followers who actually engage",
+      "Niche specificity beats broad appeal",
+      "Authenticity over production value"
+    ]
+  },
+  "frameworks": [
+    {"name": "Master Strategy", "steps": 5, "source": "social-media-video-game"},
+    {"name": "Four Business Opportunity Buckets", "steps": 4, "source": "social-media-video-game"},
+    {"name": "Hard Mode Cheat Codes", "steps": 6, "source": "social-media-hard-mode-cheat-codes"},
+    {"name": "Easy Mode Shifts", "steps": 5, "source": "social-media-easy-mode"}
+  ],
+  "last_updated": "2026-07-02"
+}

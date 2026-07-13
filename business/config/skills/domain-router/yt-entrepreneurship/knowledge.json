@@ -1,0 +1,49 @@
+{
+  "domain": "yt-entrepreneurship",
+  "platform": "yt",
+  "topic": "entrepreneurship",
+  "source": "Alex Hormozi — The Blueprint for Making Money From Scratch",
+  "url": "https://youtu.be/vH3MPI9VSnk",
+  "ingested": "2026-06-30",
+  "chunks_count": 7,
+  "frameworks": {
+    "skills_first": {
+      "name": "Skills First Mentality",
+      "when": "When advising someone on how to start a business with no money",
+      "elements": [
+        "Buy skills not things with every dollar you have",
+        "Skills are the only assets that follow you everywhere",
+        "Rich people only think about: what can I learn and what can this skill get me",
+        "Once you have enough skills buy other people's skills and time"
+      ],
+      "note": "This is the foundational framework. Everything else comes after skills."
+    },
+    "use_what_you_have": {
+      "name": "Use What You Have",
+      "when": "When someone feels stuck or blocked from starting",
+      "essence": "Use what you have not what you wish you had to get where you want to go",
+      "implication": "Stop waiting for perfect resources. The path reveals itself through action not planning.",
+      "opposite": "Waiting for the right idea, money, or timing before starting"
+    },
+    "volume_negates_luck": {
+      "name": "Volume Negates Luck",
+      "when": "When someone feels outpaced by competitors or not getting traction",
+      "ratio": "The people ahead are not doing 2x or 3x more. They are doing 100x more.",
+      "application": "If they make 500 ads a month and you make 5 you cannot win on quality alone. Increase volume to the point it feels uncomfortable.",
+      "note": "This is not about working harder. It is about realizing the gap is bigger than you think."
+    },
+    "voluntary_exchange": {
+      "name": "Voluntary Exchange Principle",
+      "when": "When someone is unsure how money is actually made in business",
+      "essence": "Money is made through voluntary exchange. You give something to someone first and they give you money back. Both parties say thank you because both are better off.",
+      "implication": "If you are not giving value first you are not building a business."
+    }
+  },
+  "key_tactics": [
+    "The first thing you sell is not the last thing you will sell. Start with any sale to learn how to sell.",
+    "You do not need to feel a certain way to win. Start from anger, sadness, shame, or fear. Winning when struggling counts just as much.",
+    "Everything comes down to buying time. Pay for others' skills so you do not have to learn everything yourself.",
+    "Generalize from being good at skills to being good at people who have skills.",
+    "Money follows exchange not intention. No exchange = no business."
+  ]
+}

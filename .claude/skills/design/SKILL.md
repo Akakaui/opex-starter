@@ -4,214 +4,88 @@ description: Create visual design assets, layouts, and graphics. Use when design
 ---
 # DESIGN SKILL
 
-Last updated: 2026-06-26
 Version: 2
-Scope: Design Agent, Content Writer
+Scope: Content Writer, Social Agent, Video Agent
 
-## PURPOSE
+## WHEN TO USE
 
-Complete production system for all visual design outputs.
-From brief to exported PNGs, ready to post or print.
-Covers social media, marketing, print, and web design.
+- Designing LinkedIn carousel slides
+- Creating social media graphics
+- Building thumbnail concepts
+- Visual direction for any content
+- Infographic layouts
 
-## BRAND SPECS
+## DESIGN PHILOSOPHY
 
-Colors:
-  Background: #0A0A0A (near black)
-  Card: #141414 (containers, code blocks)
-  Text primary: #FFFFFF
-  Text secondary: #A0A0A0
-  Accent: #FF6500 (ONE element max per design)
+Clean. Professional. Brand-consistent.
 
-Typography:
-  Font: Montserrat (all weights)
-  Headline: Bold, 48-64px, #FFFFFF
-  Body: Regular, 24-32px, #FFFFFF
-  Secondary: Regular, 18-24px, #A0A0A0
-  Accent: Bold, 24-32px, #FF6500
+Every visual must:
+- Reinforce the content message
+- Match the tone (builder/share vs audit/confront)
+- Work on mobile (most users scroll on phones)
+- Be accessible (readable text, good contrast)
 
-## FORMAT SPECS
+## OUTPUT FORMAT
 
-### Social Media
+Designs are delivered as:
+1. Slide-by-slide copy (text content for each visual)
+2. Layout direction (structure, hierarchy, spacing)
+3. Color/typography guidance
+4. Tool recommendation (Figma, Canva, or code)
 
-Instagram Post (Square):
-  Resolution: 1080x1080px
-  Ratio: 1:1
-  Use: Single image posts, quotes, stats
+## CAROUSEL DESIGN FRAMEWORK
 
-Instagram Post (Portrait):
-  Resolution: 1080x1350px
-  Ratio: 4:5
-  Use: Carousels, single posts, infographics
+### Slide Structure
+- Slide 1: Hook (big number or bold claim)
+- Slides 2-7: Core content (one idea per slide)
+- Final Slide: CTA (clear next step)
 
-Instagram Story / Reel Cover:
-  Resolution: 1080x1920px
-  Ratio: 9:16
-  Use: Stories, reel covers, TikTok
+### Visual Rules
+- Maximum 3 lines of text per slide
+- Minimum 24pt font size
+- High contrast between text and background
+- One visual idea per slide
+- Consistent spacing between elements
 
-LinkedIn Post:
-  Resolution: 1200x627px
-  Ratio: 1.91:1
-  Use: Article shares, text posts
+### Layout Options
+1. Big Text — Large headline, minimal supporting text
+2. Data — Single stat or number, visual treatment
+3. List — 3-5 items with icons or bullets
+4. Comparison — Before/after or good/bad
+5. Story — Image with text overlay
 
-LinkedIn Banner:
-  Resolution: 1584x396px
-  Ratio: ~4:1
-  Use: Profile banner
+## THUMBNAIL DESIGN
 
-Twitter/X Post:
-  Resolution: 1200x675px
-  Ratio: 16:9
-  Use: Tweet images, thread headers
+### Rules
+- Maximum 3 words of text
+- High contrast colors
+- Face or emotional reaction (when applicable)
+- Clean background
+- Brand consistent
 
-Twitter/X Header:
-  Resolution: 1500x500px
-  Ratio: 3:1
-  Use: Profile banner
+## TOOLS
 
-Facebook Post:
-  Resolution: 1200x630px
-  Ratio: 1.91:1
-  Use: Feed posts, link shares
+- Figma — Full design work
+- Canva — Quick social graphics
+- HTML/CSS — Code-generated visuals
 
-Facebook Cover:
-  Resolution: 820x312px
-  Ratio: ~2.6:1
-  Use: Page cover
+## BRAND ELEMENTS
 
-### Video / YouTube
+When designing, reference brand configuration:
+- Primary colors from brand config
+- Typography guidelines
+- Tone indicators (builder/share vs audit/confront)
 
-YouTube Thumbnail:
-  Resolution: 1280x720px
-  Ratio: 16:9
-  Use: Video thumbnails
-  Key: Bold text, high contrast, face or reaction
+For detailed brand guidance:
+> skill("voice")
+> skill("content-mission")
 
-YouTube Banner:
-  Resolution: 2560x1440px
-  Ratio: 16:9
-  Use: Channel art
-  Safe area: 1546x423px (center)
+## DESIGN CHECKLIST
 
-YouTube End Screen:
-  Resolution: 1280x720px
-  Ratio: 16:9
-  Use: Subscribe + next video prompts
-
-TikTok Cover:
-  Resolution: 1080x1920px
-  Ratio: 9:16
-  Use: Video cover image
-
-### Blog / Web
-
-Blog Hero:
-  Resolution: 1200x630px
-  Ratio: 1.91:1
-  Use: Article headers, blog posts
-
-OG Image:
-  Resolution: 1200x630px
-  Ratio: 1.91:1
-  Use: Social share preview
-
-Favicon:
-  Resolution: 512x512px
-  Ratio: 1:1
-  Use: App icon, favicon
-
-Logo:
-  Resolution: 512x512px (or transparent PNG)
-  Ratio: 1:1
-  Use: Brand mark, profile picture
-
-### Print / Marketing
-
-Poster (A4):
-  Resolution: 2480x3508px (300 DPI)
-  Ratio: 1:1.41
-  Use: Flyers, handouts, event posters
-
-Poster (A3):
-  Resolution: 3508x4961px (300 DPI)
-  Ratio: 1:1.41
-  Use: Large format prints
-
-Business Card:
-  Resolution: 1050x600px (300 DPI)
-  Ratio: 3.5:2
-  Use: Front and back
-
-Banner (Web):
-  Resolution: 728x90px (Leaderboard)
-  Resolution: 300x250px (Medium Rectangle)
-  Resolution: 160x600px (Skyscraper)
-  Use: Web ads, display ads
-
-Email Header:
-  Resolution: 600x200px
-  Ratio: 3:1
-  Use: Newsletter headers, email templates
-
-## SLIDE STRUCTURE (Carousels / Multi-page)
-
-### Slide 1 — The Hook
-
-This is the most important slide. It must stop the scroll.
-
-Options:
-  Bold claim: "I made $2,400 in 11 days with one carousel."
-  Question: "Why isn't your SaaS making money?"
-  Stat: "87% of newsletters fail at monetization."
-  Contrarian: "Posting daily is killing your reach."
-
-Design:
-  - Large text, centered
-  - Dark background
-  - Minimal elements
-  - No title — go straight to the hook
-
-### Slides 2-N — The Content
-
-One point per slide. No exceptions.
-
-Each slide:
-  - One clear headline
-  - 1-3 supporting lines max
-  - Visual element (icon, stat, or simple graphic)
-  - Enough whitespace to breathe
-
-### Final Slide — The CTA
-
-Tell the reader exactly what to do:
-  "Save this for later"
-  "Follow for more"
-  "DM me [keyword]"
-  "Link in bio"
-
-## PRODUCTION FLOW
-
-1. Content Writer provides slide-by-slide / design brief copy
-2. Design Agent writes HTML/CSS for each format
-3. Export via Playwright at target resolution
-4. Quality check: readability, brand alignment
-5. Deliver PNGs in order
-
-## EXPORT SETTINGS
-
-Playwright Python script:
-  Location: ~/.config/opencode/tools/export.py
-  Viewport: scaled to target (e.g., 420x525 for 1080x1350)
-  Device scale factor: target / viewport (e.g., 2.5714x)
-  Wait: 3000ms (fonts loading)
-  Format: PNG
-
-## COMMON MISTAKES TO AVOID
-
-- Too much text per design (max 30 words for social)
-- Inconsistent spacing between elements
-- Accent color used more than once per design
-- White background (always #0A0A0A for brand)
-- Small text that's unreadable on mobile
-- No CTA on the final slide (carousels)
-- Wrong dimensions for target platform
+Before delivering any visual:
+- [ ] Text is readable on mobile
+- [ ] Contrast meets accessibility
+- [ ] Brand colors are used consistently
+- [ ] One idea per slide/frame
+- [ ] CTA is clear and prominent
+- [ ] Visual reinforces the message

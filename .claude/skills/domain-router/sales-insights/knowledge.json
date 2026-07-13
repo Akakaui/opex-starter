@@ -1,0 +1,54 @@
+{
+  "domain": "sales-insights",
+  "platform": "sales",
+  "topic": "sales-insights",
+  "source": "Multi-source aggregate — 68 sales insight chunks",
+  "ingested": "2026-07-06",
+  "chunks_count": 68,
+  "frameworks": {
+    "revenue_leaks_analysis": {
+      "name": "Ultimate Revenue Leaks Analysis",
+      "when": "When diagnosing revenue problems in a business",
+      "principle": "Most business owners look in the wrong places for revenue — right where they're already spending money",
+      "series": [
+        "3 Core Analysis Posts",
+        "7 Specialized Deep-Dives (automation, pricing, client expansion, subscription models)",
+        "4 Tool Reviews (CRM, analytics, marketing automation, project management)"
+      ]
+    },
+    "lead_tracking_crm": {
+      "name": "Lead Tracking CRM Powerhouse",
+      "when": "When building or recommending lead management systems",
+      "components": [
+        "Lead Tracking Fundamentals",
+        "CRM Software Matrix (free and paid options)",
+        "Lead Conversion Frameworks",
+        "Automation Workflows"
+      ],
+      "end_state": "Prospects finish needing someone who can design, implement, and train on CRM systems"
+    },
+    "booking_automation": {
+      "name": "Manual Booking Automation",
+      "when": "When discussing scheduling efficiency",
+      "problem": "The Booking Black Hole — every minute spent manually coordinating meetings is a minute your team could spend on revenue-generating activities"
+    },
+    "consistency_secret": {
+      "name": "The Consistency Secret",
+      "when": "When discussing content and sales consistency",
+      "elements": [
+        "Create content that aligns with a clear business purpose",
+        "Use multiple formats to reach different audiences",
+        "Publish consistently to build momentum",
+        "Measure everything to iterate and improve"
+      ]
+    }
+  },
+  "key_tactics": [
+    "Revenue leaks are everywhere — most businesses bleed money in places they never check",
+    "The Booking Black Hole: manual scheduling is a hidden revenue killer",
+    "Most businesses have no CRM or a broken one — massive opportunity for those who solve it",
+    "Data-driven insights from 500+ businesses build authority no one can question",
+    "Position the end-state: after reading your content, they need YOU to implement the system",
+    "Consistency beats intensity — four elements: aligned purpose, multi-format, momentum, measurement"
+  ]
+}

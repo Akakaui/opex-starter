@@ -1,0 +1,54 @@
+{
+  "domain": "yt-content-psychology",
+  "platform": "yt",
+  "topic": "content-psychology",
+  "source": "Multi-source aggregate — 139 psychology chunks",
+  "ingested": "2026-07-06",
+  "chunks_count": 139,
+  "frameworks": {
+    "move_to_their_side": {
+      "name": "Move to Their Side of the Table",
+      "when": "When writing sales or persuasion copy",
+      "method": "Start across the table (seller vs buyer). End shoulder to shoulder (both looking at the decision together).",
+      "effect": "The salesperson becomes incredibly trusted"
+    },
+    "ghost_products_strategy": {
+      "name": "Ghost Products Strategy (Hormozi)",
+      "when": "When designing offers or sales sequences",
+      "principle": "Sell the outcome before the product exists. Validate demand before building.",
+      "source": "Alex Hormozi — My Best Sales Tactic"
+    },
+    "pain_point_solution_gap": {
+      "name": "Pain Point Solution Gap",
+      "when": "When demonstrating value visually",
+      "method": "Show the distance between where they are and where they want to be. Use hands, graphics, or examples to visualize the gap.",
+      "why_it_works": "Human brains are problem-solving machines — they fixate on unresolved gaps"
+    },
+    "point_of_difference": {
+      "name": "Point of Difference (Contrast)",
+      "when": "When creating contrarian or positioning content",
+      "formula": "'Everyone says do Y — I say do Z'",
+      "why_it_works": "The brain constantly looks for easier, better, faster ways — curiosity loop keeps them watching"
+    },
+    "screenshots_visual_proof": {
+      "name": "Screenshots & Visual Proof",
+      "when": "When needing to build trust quickly",
+      "method": "Flash bank statements, A-B tests, before/after, social followings. One or two quick flashes = trust built.",
+      "fallback": "If no proof — use common ground: 'I've been exactly where you are'"
+    },
+    "illusion_of_novelty": {
+      "name": "Illusion of Novelty",
+      "when": "When making boring topics interesting",
+      "formula": "Reveal new aspect of a thing + tie it to outcome viewer wants",
+      "example": "Root canal with robotics: zero needles, zero pain, back to work in 30 minutes"
+    }
+  },
+  "key_tactics": [
+    "Emotion → Action. That's the game. All marketing boils down to one thing: can you get the viewer to feel an emotion that compels action?",
+    "If you can walk yourself around the table psychologically, it's one of the fastest ways to build trust",
+    "Screenshots create instant credibility better than credentials",
+    "Curiosity loops make viewers stay for the resolution",
+    "Contrast between common approach and your approach creates the strongest retention",
+    "The Pain Point Solution Gap works because brains are wired to solve problems"
+  ]
+}

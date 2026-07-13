@@ -1,0 +1,31 @@
+
+# Backups
+# Never commit MCP OAuth tokens
+# Never commit Qdrant binary or data
+# Never commit archives
+# Never commit backup artifacts
+# Node
+# OS & editor
+# Python
+*.bak
+*.pyc
+*.swp
+*.tar.gz
+*.zip
+*/backups/
+*/qdrant-export*
+.DS_Store
+/tmp/opex-backup-*
+/tmp/opex-backups/
+/tmp/qdrant-export-*
+Thumbs.db
+__pycache__/
+artifacts/
+config.json
+config/qdrant.yaml
+node_modules/
+opencode.json
+opex-backup-*/
+package-lock.json
+qdrant
+qdrant-storage/

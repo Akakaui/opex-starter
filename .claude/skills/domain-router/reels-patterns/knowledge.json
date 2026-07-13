@@ -1,0 +1,73 @@
+{
+  "domain": "reels-patterns",
+  "platform": "ig",
+  "topic": "reels",
+  "source": "Multi-source aggregate — 31 reel hook patterns",
+  "ingested": "2026-07-06",
+  "chunks_count": 31,
+  "frameworks": {
+    "hook_patterns_by_type": {
+      "name": "Reel Hook Pattern Library",
+      "when": "When writing hooks for short-form vertical video",
+      "patterns": {
+        "contrarian_hook": {
+          "category": "hook",
+          "effectiveness": "High — triggers cognitive dissonance",
+          "description": "Challenge a common belief to stop the scroll",
+          "example": "'Everyone says you need 10k followers to make money. That's a lie.'"
+        },
+        "curiosity_gap": {
+          "category": "hook",
+          "effectiveness": "High — specific numbers build credibility",
+          "description": "Present specific experiment with results implied but not revealed",
+          "example": "'I posted every day for 30 days. Here's exactly what happened.'"
+        },
+        "direct_address": {
+          "category": "hook",
+          "effectiveness": "Very High — viewer feels personally called out",
+          "description": "Call out viewer by naming a behavior or belief they have",
+          "example": "'If you're posting every day and getting no engagement, here's what you're doing wrong.'"
+        },
+        "pain_point_amplifier": {
+          "category": "hook",
+          "effectiveness": "High — resonates with frustrated audiences",
+          "description": "Name a specific frustration and promise a solution",
+          "example": "'Tired of creating content that nobody sees? Here's the fix.'"
+        },
+        "result_brag": {
+          "category": "hook",
+          "effectiveness": "High — social proof attracts attention",
+          "description": "Lead with a specific impressive result",
+          "example": "'I generated 200 leads in 7 days with one post. Here's the exact strategy.'"
+        },
+        "story_opener": {
+          "category": "hook",
+          "effectiveness": "High — narrative hooks keep viewers watching",
+          "description": "Open in the middle of a story to create narrative tension",
+          "example": "'Two years ago I was broke. Last month I hit $50K in revenue.'"
+        },
+        "question_hook": {
+          "category": "engagement",
+          "effectiveness": "Medium — drives comments",
+          "description": "Ask a question that makes the viewer stop and think",
+          "example": "'What if everything you know about Instagram is wrong?'"
+        },
+        "stat_or_fact": {
+          "category": "authority",
+          "effectiveness": "Medium — builds credibility",
+          "description": "Open with a surprising statistic or little-known fact",
+          "example": "'90% of businesses never follow up with leads. That's $1T in left money.'"
+        }
+      }
+    }
+  },
+  "key_tactics": [
+    "The first 0-3 seconds are all you get — no warm-up, no logo, no intro",
+    "Contrarian hooks work best for authority and thought leadership content",
+    "Curiosity gaps work best for educational content and case studies",
+    "Direct address works for pain-point content where audience is problem-aware",
+    "Specific numbers build credibility faster than vague claims",
+    "The hook must match the audience's awareness level — unaware audiences need different hooks than problem-aware ones",
+    "Highest effectiveness hooks: Direct Address, Contrarian, Curiosity Gap, Result Brag"
+  ]
+}

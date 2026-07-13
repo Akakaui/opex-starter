@@ -12,31 +12,42 @@ OPEX is not an assistant. It's a partner that helps you run every aspect of your
 - **Marketing Strategy** — Content calendars, lead magnets, email sequences, funnels
 - **Client Management** — Pipeline tracking, onboarding, retention
 
+## How It Works
+
+```
+You → OPEX (orchestrator) → Sub-agents (specialists) → You
+```
+
+OPEX is the main orchestrator. It reads your memory files, understands your goals, and delegates work to 6 specialized sub-agents. Each agent runs in its own context window and returns results to OPEX, which reviews and presents them to you.
+
 ## Quick Start
 
-### 1. Install Claude Code
+### Option 1 — Claude Web (Recommended)
 
-If you don't have Claude Code:
+1. Go to [claude.ai](https://claude.ai)
+2. Create a new project
+3. Upload or paste the contents of this repo
+4. Say `Hey OPEX`
+
+### Option 2 — Claude Code (Local)
+
+1. Install Claude Code:
 ```bash
 npm install -g @anthropic-ai/claude-code
 ```
 
-### 2. Clone This Repo
-
+2. Clone this repo:
 ```bash
 git clone https://github.com/Akakaui/opex-starter.git
 cd opex-starter
 ```
 
-### 3. Start OPEX
-
+3. Start Claude Code:
 ```bash
 claude
 ```
 
-Then say: `Hey OPEX`
-
-OPEX will run onboarding and ask you about your business.
+4. Say `Hey OPEX`
 
 ## What Happens During Onboarding
 
@@ -71,14 +82,20 @@ opex-starter/
 │   │   ├── design-agent.md
 │   │   ├── research-agent.md
 │   │   └── sales-agent.md
-│   ├── skills/              # Skills (30+ included)
+│   ├── skills/              # Core skills
 │   │   ├── bootstrap/
+│   │   ├── onboarding/
 │   │   ├── voice/
 │   │   ├── humanizer/
 │   │   ├── copywriting/
 │   │   ├── social/
 │   │   ├── video/
+│   │   ├── domain-router/
 │   │   └── ...
+│   ├── skills-extended/     # Optional third-party skills
+│   │   ├── hyperframes/
+│   │   ├── embedded-captions/
+│   │   └── ... (100+ skills)
 │   ├── commands/            # Slash commands
 │   │   ├── start.md
 │   │   ├── content.md
@@ -99,8 +116,18 @@ opex-starter/
 │   │   ├── 07-profile-knowledge.md
 │   │   ├── session.state.md
 │   │   └── day-tracker.md
-│   ├── knowledge/           # Your research
+│   ├── knowledge/           # Your research (file-based storage)
+│   │   └── domains/
+│   │       ├── applied-business/
+│   │       ├── sales-insights/
+│   │       ├── yt-content-psychology/
+│   │       ├── yt-social-strategy/
+│   │       └── yt-personal-brand/
 │   └── agents/              # Your custom agents
+├── tools/
+│   ├── document/            # PDF & Word generators
+│   ├── ingest.js            # Knowledge ingestion
+│   └── knowledge-store.js   # Domain knowledge management
 ├── settings.json
 └── README.md
 ```
@@ -117,48 +144,61 @@ opex-starter/
 | `Audit my content` | Performance review |
 | `What's next?` | Check schedule |
 
+## Sub-Agent System
+
+OPEX delegates work to 6 specialized agents. Each runs in its own context window.
+
+| Agent | What It Does |
+|-------|--------------|
+| content-writer | Writes posts, articles, threads, carousels |
+| video-agent | Scripts videos, creates scene plans and asset lists |
+| copy-agent | Writes sales copy, cold emails, landing pages |
+| design-agent | Creates design briefs and visual direction |
+| research-agent | Researches competitors, markets, and ingests knowledge |
+| sales-agent | Handles outreach, client acquisition, proposals |
+
+### How Delegation Works
+
+1. You make a request to OPEX
+2. OPEX reads your memory files for context
+3. OPEX decides which agent handles it
+4. OPEX uses the `task` tool to spawn that agent
+5. OPEX passes your brand voice, goals, and platform context
+6. Agent does the work in its own context
+7. Agent returns result to OPEX
+8. OPEX reviews against quality gates
+9. OPEX presents to you
+
 ## Skills Included
 
-### Content Skills
-- copywriting
-- social
-- content-mission
-- content-strategy
-- attention
-- humanizer
-- stop-slop
-- voice
+### Core Skills (Always Loaded)
+- bootstrap — Session initialization
+- onboarding — First-time setup
+- voice — Brand voice rules
+- humanizer — Strip AI patterns
+- copywriting — Persuasive copy
+- social — Social media content
+- attention — Hooks and openings
+- stop-slop — Remove AI tells
+- content-mission — Mission tags
+- content-strategy — Content planning
 
-### Video Skills
-- video
-- reels-patterns
-- yt-copywriting
+### Domain Skills (Auto-Loaded)
+- domain-router — Routes knowledge by topic
+- hooks-pi — Hook patterns
+- reels-patterns — Short-form video structures
+- yt-content-psychology — Audience psychology
+- yt-social-strategy — Platform growth
+- yt-personal-brand — Personal branding
+- sales-insights — Sales patterns
+- applied-business — Business frameworks
 
-### Sales Skills
-- sales
-- cold-email
-- prospecting
-- customer-research
-- lead-magnets
-
-### Marketing Skills
-- marketing-psychology
-- psychology
-- pricing
-- analytics
-- ab-testing
-
-### Design Skills
-- design
-- canvas-design
-
-### System Skills
-- bootstrap
-- cleanup
-- handoff
-- confirmation
-- skill-creator
-- find-skills
+### Extended Skills (Optional)
+100+ third-party skills in `skills-extended/` for specialized tasks:
+- Video production (HyperFrames, embedded-captions, etc.)
+- Web design (open-design, frontend-design, etc.)
+- Marketing (ads, email, CRO, etc.)
+- Development (git, testing, deployment, etc.)
 
 ## Knowledge Ingestion
 
@@ -168,16 +208,32 @@ Train OPEX on content you admire:
 Hey OPEX, watch this video: [URL]
 ```
 
-OPEX extracts patterns and stores them for future content.
+OPEX extracts patterns and stores them as organized files.
 
-### Lightweight Options (No Heavy Hardware)
+### Supported Input Types
+- **YouTube URLs** — Downloads, transcribes, extracts frameworks
+- **Blog post URLs** — Scrapes, extracts key insights
+- **Local video files** — Transcribes and analyzes
+- **Text articles** — Direct pattern extraction
 
-For PCs with limited resources:
-- **Markdown files** — Just organized notes (no extra software)
-- **SQLite** — Full-text search (built into most systems)
-- **ChromaDB** — Local vector search (lightweight, ~100MB)
+### How Knowledge Storage Works
 
-OPEX defaults to markdown files. Upgrade to ChromaDB if you want semantic search.
+```
+business/knowledge/domains/
+├── applied-business/
+│   ├── knowledge.json      # Extracted frameworks and methods
+│   ├── sources.json        # Source references
+│   └── chunks/             # Individual content pieces
+├── sales-insights/
+├── yt-content-psychology/
+├── yt-social-strategy/
+└── yt-personal-brand/
+```
+
+- **No external services required** — No vector databases, no APIs
+- **Just organized files** — Claude Code reads them directly
+- **Lightweight** — Works on any machine
+- **Upgradeable** — Want semantic search later? Add ChromaDB or SQLite
 
 ## Customization
 
@@ -186,6 +242,11 @@ OPEX defaults to markdown files. Upgrade to ChromaDB if you want semantic search
 Create a new file in `.claude/skills/your-skill/SKILL.md`:
 
 ```markdown
+---
+name: your-skill
+description: When to use this skill
+---
+
 # Your Skill
 
 [Instructions for when this skill is loaded]
@@ -239,7 +300,7 @@ OPEX works with any platform. During onboarding, tell it where you post:
 
 Say: `Hey OPEX, help me with [topic]`
 
-Or use: `@skill-name` to load a specific skill.
+Or use: `/project:start` to restart the session.
 
 ## License
 
