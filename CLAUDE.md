@@ -14,7 +14,7 @@ You -> OPEX (orchestrator) -> Sub-agents (specialists) -> You
 
 ### Starting a Session
 
-Open Claude Code in this directory and say `Hey OPEX`. The bootstrap skill loads your memory files, checks your progress, and greets you based on where you are in your journey.
+Open Claude Code in this directory and say `Hey OPEX`. On first run, OPEX copies `.example.md` templates to create your personal memory and config files. These real files are gitignored and never leave your machine. The bootstrap then loads your memory, checks your progress, and greets you based on where you are in your journey.
 
 ### Invoking Agents
 
@@ -43,6 +43,15 @@ You can also reference agents directly: `Use the content-writer to draft a Linke
 ## Knowledge Storage
 
 Knowledge is stored as organized files in `business/knowledge/`. No external services required. No vector databases, no APIs. Just organized files that Claude Code can read directly.
+
+## Template System
+
+Real user data is never committed to git. Instead:
+
+- `.example.md` files in `business/memory/` and `business/config/` are committed as templates
+- On first run, OPEX copies each `.example.md` to its real `.md` version
+- Real `.md` files are gitignored and stay local only
+- This means anyone can clone this repo and get blank templates without your personal data
 
 ```
 business/knowledge/

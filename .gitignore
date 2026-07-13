@@ -29,19 +29,9 @@ opencode.json
 # Temporary
 artifacts/
 
-# User-specific data (populated during onboarding, not shared)
+# User-specific data — real files are generated locally from .example templates
+# and are never committed. The .example files ARE committed as templates.
+business/memory/*.md
+!business/memory/*.example.md
 business/config/user.config.md
-business/memory/01-brand-and-design.md
-business/memory/02-posting-schedule.md
-business/memory/03-goals-and-missions.md
-business/memory/05-tone-and-protocol.md
-business/memory/06-milestones.md
-business/memory/07-profile-knowledge.md
-business/memory/08-client-segments.md
-business/memory/09-client-tracking.md
-business/memory/10-mcp-integrations.md
-business/memory/video-pipeline-and-drive-workflow.md
-business/memory/session.state.md
-business/memory/day-tracker.md
-business/memory/performance.memory.md
-business/memory/video-tracker.md
+!business/config/user.config.example.md

@@ -53,6 +53,10 @@ claude
 
 OPEX asks you questions about your business, goals, and platforms. Then it sets up everything and you're ready for Day 1.
 
+## Template System
+
+Real user data is never committed to git. The `.example.md` files in `business/memory/` and `business/config/` are committed as templates. On first run, OPEX copies each `.example.md` to its real `.md` version. These real files are gitignored and stay local only. This means anyone can clone this repo without getting your personal data.
+
 ## File Structure
 
 ```
@@ -89,18 +93,12 @@ opex-starter/
 │       └── audit.md
 ├── business/
 │   ├── config/
-│   │   ├── user.config.md   # Your settings
-│   │   └── TOOLS.md         # Installed tools inventory
+│   │   ├── user.config.example.md  # Template (committed to git)
+│   │   ├── user.config.md          # Your real config (generated locally, never committed)
+│   │   └── TOOLS.md                # Installed tools inventory
 │   ├── memory/              # Your context
-│   │   ├── 01-brand-and-design.md
-│   │   ├── 02-posting-schedule.md
-│   │   ├── 03-goals-and-missions.md
-│   │   ├── 04-human-voice-rules.md
-│   │   ├── 05-tone-and-protocol.md
-│   │   ├── 06-milestones.md
-│   │   ├── 07-profile-knowledge.md
-│   │   ├── session.state.md
-│   │   └── day-tracker.md
+│   │   ├── *.example.md     # Templates (committed to git)
+│   │   └── *.md             # Your real data (generated locally, never committed)
 │   ├── knowledge/           # Your research (file-based storage)
 │   └── agents/              # Your custom agents
 ├── settings.json
@@ -241,7 +239,7 @@ tools: ["Read", "Write"]
 
 ### Modify Voice Rules
 
-Edit `business/memory/04-human-voice-rules.md` to change how OPEX writes.
+Edit `business/memory/04-human-voice-rules.md` to change how OPEX writes. (If you just cloned the repo, this file is created automatically from `.example.md` on first run.)
 
 ## Platform Support
 

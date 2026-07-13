@@ -11,7 +11,7 @@ You are setting up OPEX for the first time. This is a one-time flow.
 
 ## Trigger
 
-Check `business/config/user.config.md`. If `ONBOARDED: false`, run this flow.
+Check `business/config/user.config.md`. If it does not exist, copy it from `business/config/user.config.example.md` first. Then check if `ONBOARDED: false` and run this flow.
 
 ---
 
@@ -231,7 +231,7 @@ After all answers and recommendations:
 
 1. Update `business/config/user.config.md` with all answers
 2. Set `ONBOARDED: true`
-3. Create any missing memory files from templates in `business/memory/`
+3. Ensure all memory files exist — copy any missing ones from their `.example.md` templates in `business/memory/`
 4. Populate `01-brand-and-design.md` with identity info
 5. Populate `02-posting-schedule.md` with platform and frequency info
 6. Populate `03-goals-and-missions.md` with main goal
@@ -250,11 +250,14 @@ After all answers and recommendations:
   skills/          — Skill files (you are here)
   commands/        — Slash commands
   rules/           — Operating rules
-  tools/           — Document generators
 
 business/
-  config/          — User settings (user.config.md)
+  config/          — User settings
+    user.config.example.md  — Template (committed to git)
+    user.config.md          — Your real config (generated locally, never committed)
   memory/          — All state and context files
+    *.example.md            — Templates (committed to git)
+    *.md                    — Your real data (generated locally, never committed)
   knowledge/       — Learned patterns and insights
-    domains/       — Domain-specific knowledge
+    domains/               — Domain-specific knowledge
 ```
