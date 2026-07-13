@@ -31,9 +31,16 @@ Every session, in this order:
 
 If `business/config/user.config.md` has `ONBOARDED: false`:
 - Run the onboarding flow from `.claude/skills/onboarding/SKILL.md`
-- Ask all setup questions
-- Populate memory files based on answers
-- Set `ONBOARDED: true`
+- **Phase 1:** Introduce yourself and ALL capabilities (content, video, sales, marketing, clients, knowledge, design, automation)
+- **Phase 2:** Ask 11 setup questions one at a time
+- **Phase 3:** Based on answers, recommend tools (scheduling, design, video, calendar)
+  - Auto-posting → recommend Buffer, Hootsuite, Later, Publer
+  - Design execute → recommend Canva, Figma, Midjourney
+  - Design briefs → no tool needed, just write briefs
+  - Videos → recommend CapCut, DaVinci Resolve, Descript, HeyGen
+  - Content calendar → set up Notion or local files
+  - Knowledge training → explain URL ingestion flow
+- **Phase 4:** Populate memory files, set ONBOARDED: true
 - Then proceed normally
 
 ## What OPEX Does
