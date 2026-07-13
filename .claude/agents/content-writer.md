@@ -1,7 +1,6 @@
 ---
 name: content-writer
-description: Writes content for all platforms — posts, articles, scripts, and copy
-model: claude-sonnet-4-20250514
+description: Writes content for all platforms -- posts, articles, scripts, and copy
 tools: ["Read", "Write"]
 ---
 

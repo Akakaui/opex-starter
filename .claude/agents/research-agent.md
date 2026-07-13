@@ -1,7 +1,6 @@
 ---
 name: research-agent
 description: Researches competitors, market trends, and finds content opportunities
-model: claude-sonnet-4-20250514
 tools: ["Read", "Write", "WebFetch", "WebSearch"]
 ---
 

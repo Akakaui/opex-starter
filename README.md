@@ -6,30 +6,30 @@ A co-founder level AI partner for your content business. Works with Claude Code.
 
 OPEX is not an assistant. It's a partner that helps you run every aspect of your content business:
 
-- **Content Creation** — Posts, articles, carousels, threads for any platform
-- **Video Production** — Scripts, scene plans, asset lists for Reels, YouTube, TikTok
-- **Sales & Outreach** — Cold emails, DMs, discovery calls, client acquisition
-- **Marketing Strategy** — Content calendars, lead magnets, email sequences, funnels
-- **Client Management** — Pipeline tracking, onboarding, retention
+- **Content Creation** -- Posts, articles, carousels, threads for any platform
+- **Video Production** -- Scripts, scene plans, asset lists for Reels, YouTube, TikTok
+- **Sales & Outreach** -- Cold emails, DMs, discovery calls, client acquisition
+- **Marketing Strategy** -- Content calendars, lead magnets, email sequences, funnels
+- **Client Management** -- Pipeline tracking, onboarding, retention
 
 ## How It Works
 
 ```
-You → OPEX (orchestrator) → Sub-agents (specialists) → You
+You -> OPEX (orchestrator) -> Sub-agents (specialists) -> You
 ```
 
 OPEX is the main orchestrator. It reads your memory files, understands your goals, and delegates work to 6 specialized sub-agents. Each agent runs in its own context window and returns results to OPEX, which reviews and presents them to you.
 
 ## Quick Start
 
-### Option 1 — Claude Web (Recommended)
+### Option 1 -- Claude Web (Recommended)
 
 1. Go to [claude.ai](https://claude.ai)
 2. Create a new project
 3. Upload or paste the contents of this repo
 4. Say `Hey OPEX`
 
-### Option 2 — Claude Code (Local)
+### Option 2 -- Claude Code (Local)
 
 1. Install Claude Code:
 ```bash
@@ -51,21 +51,7 @@ claude
 
 ## What Happens During Onboarding
 
-OPEX asks you 11 questions:
-
-1. What's your name and what do you do?
-2. Tell me about your business
-3. What platforms do you want to post on?
-4. Do you want to create videos?
-5. How much automation do you want?
-6. Where do you want to store your content calendar?
-7. Do you want OPEX to handle design, or just give briefs?
-8. Do you want to train OPEX on videos?
-9. How often do you want to post?
-10. What's your main goal?
-11. Ready to start?
-
-Then it sets up everything and you're ready for Day 1.
+OPEX asks you questions about your business, goals, and platforms. Then it sets up everything and you're ready for Day 1.
 
 ## File Structure
 
@@ -96,16 +82,15 @@ opex-starter/
 │   │   ├── hyperframes/
 │   │   ├── embedded-captions/
 │   │   └── ... (100+ skills)
-│   ├── commands/            # Slash commands
-│   │   ├── start.md
-│   │   ├── content.md
-│   │   ├── video.md
-│   │   └── audit.md
-│   └── rules/
-│       └── opex-rules.md
+│   └── commands/            # Slash commands
+│       ├── start.md
+│       ├── content.md
+│       ├── video.md
+│       └── audit.md
 ├── business/
 │   ├── config/
-│   │   └── user.config.md   # Your settings
+│   │   ├── user.config.md   # Your settings
+│   │   └── TOOLS.md         # Installed tools inventory
 │   ├── memory/              # Your context
 │   │   ├── 01-brand-and-design.md
 │   │   ├── 02-posting-schedule.md
@@ -117,17 +102,7 @@ opex-starter/
 │   │   ├── session.state.md
 │   │   └── day-tracker.md
 │   ├── knowledge/           # Your research (file-based storage)
-│   │   └── domains/
-│   │       ├── applied-business/
-│   │       ├── sales-insights/
-│   │       ├── yt-content-psychology/
-│   │       ├── yt-social-strategy/
-│   │       └── yt-personal-brand/
 │   └── agents/              # Your custom agents
-├── tools/
-│   ├── document/            # PDF & Word generators
-│   ├── ingest.js            # Knowledge ingestion
-│   └── knowledge-store.js   # Domain knowledge management
 ├── settings.json
 └── README.md
 ```
@@ -172,26 +147,26 @@ OPEX delegates work to 6 specialized agents. Each runs in its own context window
 ## Skills Included
 
 ### Core Skills (Always Loaded)
-- bootstrap — Session initialization
-- onboarding — First-time setup
-- voice — Brand voice rules
-- humanizer — Strip AI patterns
-- copywriting — Persuasive copy
-- social — Social media content
-- attention — Hooks and openings
-- stop-slop — Remove AI tells
-- content-mission — Mission tags
-- content-strategy — Content planning
+- bootstrap -- Session initialization
+- onboarding -- First-time setup
+- voice -- Brand voice rules
+- humanizer -- Strip AI patterns
+- copywriting -- Persuasive copy
+- social -- Social media content
+- attention -- Hooks and openings
+- stop-slop -- Remove AI tells
+- content-mission -- Mission tags
+- content-strategy -- Content planning
 
 ### Domain Skills (Auto-Loaded)
-- domain-router — Routes knowledge by topic
-- hooks-pi — Hook patterns
-- reels-patterns — Short-form video structures
-- yt-content-psychology — Audience psychology
-- yt-social-strategy — Platform growth
-- yt-personal-brand — Personal branding
-- sales-insights — Sales patterns
-- applied-business — Business frameworks
+- domain-router -- Routes knowledge by topic
+- hooks-pi -- Hook patterns
+- reels-patterns -- Short-form video structures
+- yt-content-psychology -- Audience psychology
+- yt-social-strategy -- Platform growth
+- yt-personal-brand -- Personal branding
+- sales-insights -- Sales patterns
+- applied-business -- Business frameworks
 
 ### Extended Skills (Optional)
 100+ third-party skills in `skills-extended/` for specialized tasks:
@@ -211,29 +186,25 @@ Hey OPEX, watch this video: [URL]
 OPEX extracts patterns and stores them as organized files.
 
 ### Supported Input Types
-- **YouTube URLs** — Downloads, transcribes, extracts frameworks
-- **Blog post URLs** — Scrapes, extracts key insights
-- **Local video files** — Transcribes and analyzes
-- **Text articles** — Direct pattern extraction
+- **YouTube URLs** -- Downloads, transcribes, extracts frameworks
+- **Blog post URLs** -- Scrapes, extracts key insights
+- **Local video files** -- Transcribes and analyzes
+- **Text articles** -- Direct pattern extraction
 
 ### How Knowledge Storage Works
 
 ```
-business/knowledge/domains/
-├── applied-business/
-│   ├── knowledge.json      # Extracted frameworks and methods
-│   ├── sources.json        # Source references
-│   └── chunks/             # Individual content pieces
-├── sales-insights/
-├── yt-content-psychology/
-├── yt-social-strategy/
-└── yt-personal-brand/
+business/knowledge/
+├── competitors/          # Competitor profiles
+├── trends/               # Market trends
+├── video-patterns/       # Video structures and hooks
+└── [domain]/             # Custom knowledge domains
 ```
 
-- **No external services required** — No vector databases, no APIs
-- **Just organized files** — Claude Code reads them directly
-- **Lightweight** — Works on any machine
-- **Upgradeable** — Want semantic search later? Add ChromaDB or SQLite
+- **No external services required** -- No vector databases, no APIs
+- **Just organized files** -- Claude Code reads them directly
+- **Lightweight** -- Works on any machine
+- **Upgradeable** -- Want semantic search later? Add ChromaDB or SQLite
 
 ## Customization
 
@@ -260,7 +231,6 @@ Create a new file in `.claude/agents/your-agent.md`:
 ---
 name: your-agent
 description: What this agent does
-model: claude-sonnet-4-20250514
 tools: ["Read", "Write"]
 ---
 
@@ -304,7 +274,7 @@ Or use: `/project:start` to restart the session.
 
 ## License
 
-MIT — Use it however you want.
+MIT -- Use it however you want.
 
 ## Credits
 

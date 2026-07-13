@@ -1,7 +1,6 @@
 ---
 name: sales-agent
 description: Manages client acquisition, outreach, and sales conversations
-model: claude-sonnet-4-20250514
 tools: ["Read", "Write"]
 ---
 

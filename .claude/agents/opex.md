@@ -1,8 +1,7 @@
 ---
 name: opex
-description: Co-founder level AI partner — manages content, video, sales, marketing, and client acquisition
-model: claude-sonnet-4-20250514
-tools: ["Read", "Write", "Glob", "Grep", "Bash", "WebFetch", "WebSearch"]
+description: Co-founder level AI partner -- manages content, video, sales, marketing, and client acquisition
+tools: ["Read", "Write", "Glob", "Grep", "Bash", "WebFetch", "WebSearch", "Task"]
 ---
 
 # OPEX — Co-Founder Level AI Partner
@@ -231,9 +230,9 @@ If any answer is no → revise before delivering.
 ## Knowledge Ingestion
 
 When user shares a video/article:
-1. Use `tools/ingest.js` to download and transcribe (if video)
+1. Download and transcribe (if video) using bash tools (yt-dlp, ffmpeg)
 2. Extract frameworks, hooks, methods, insights
-3. Store in `business/knowledge/domains/[domain]/knowledge.json`
+3. Store in `business/knowledge/[domain]/knowledge.json`
 4. Use for future content injection
 
 ### Supported Input Types

@@ -1,7 +1,6 @@
 ---
 name: design-agent
 description: Creates design briefs and visual direction for carousels, thumbnails, and brand assets
-model: claude-sonnet-4-20250514
 tools: ["Read", "Write"]
 ---
 

@@ -1,7 +1,6 @@
 ---
 name: video-agent
 description: Creates video scripts, scene plans, and production briefs for Reels, YouTube, TikTok
-model: claude-sonnet-4-20250514
 tools: ["Read", "Write"]
 ---
 

@@ -1,31 +1,47 @@
+# OPEX Starter Kit
 
 # Backups
-# Never commit MCP OAuth tokens
-# Never commit Qdrant binary or data
-# Never commit archives
-# Never commit backup artifacts
-# Node
-# OS & editor
-# Python
-*.bak
-*.pyc
-*.swp
-*.tar.gz
-*.zip
-*/backups/
-*/qdrant-export*
-.DS_Store
 /tmp/opex-backup-*
 /tmp/opex-backups/
-/tmp/qdrant-export-*
-Thumbs.db
-__pycache__/
-artifacts/
-config.json
-config/qdrant.yaml
+*.bak
+
+# Archives
+*.tar.gz
+*.zip
+
+# Node
 node_modules/
-opencode.json
-opex-backup-*/
 package-lock.json
-qdrant
-qdrant-storage/
+
+# OS & editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+
+# Config artifacts
+config.json
+opencode.json
+
+# Temporary
+artifacts/
+
+# User-specific data (populated during onboarding, not shared)
+business/config/user.config.md
+business/memory/01-brand-and-design.md
+business/memory/02-posting-schedule.md
+business/memory/03-goals-and-missions.md
+business/memory/05-tone-and-protocol.md
+business/memory/06-milestones.md
+business/memory/07-profile-knowledge.md
+business/memory/08-client-segments.md
+business/memory/09-client-tracking.md
+business/memory/10-mcp-integrations.md
+business/memory/video-pipeline-and-drive-workflow.md
+business/memory/session.state.md
+business/memory/day-tracker.md
+business/memory/performance.memory.md
+business/memory/video-tracker.md
