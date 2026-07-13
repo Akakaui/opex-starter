@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": ["Read", "Glob", "Grep", "WebFetch", "WebSearch"],
+    "ask": ["Write", "Edit", "Bash"],
+    "deny": ["Bash(rm -rf *)"]
+  }
+}

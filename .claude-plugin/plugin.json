@@ -1,0 +1,17 @@
+{
+  "$schema": "https://code.claude.com/schemas/plugin.json",
+  "name": "opex-starter",
+  "version": "1.0.0",
+  "description": "OPEX — Co-founder level AI partner for content businesses. Manages content, video, sales, marketing, and client acquisition.",
+  "author": {
+    "name": "Akaka Favour",
+    "url": "https://github.com/Akakaui"
+  },
+  "license": "MIT",
+  "keywords": ["content", "marketing", "video", "sales", "business", "automation"],
+  "defaultEnabled": true,
+  "skills": ".claude/skills",
+  "agents": ".claude/agents",
+  "commands": ".claude/commands",
+  "hooks": ".claude/hooks/hooks.json"
+}
